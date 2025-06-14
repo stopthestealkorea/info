@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/stopthesteal', // GitHub 저장소 이름으로 변경
+  base: '/info', // GitHub 저장소 이름으로 변경
   build: {
     outDir: 'docs',
   },
