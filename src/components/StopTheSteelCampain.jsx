@@ -6,11 +6,12 @@ import {
   Volume2,
   X,
   Share2,
-  Calendar
+  Calendar,
+  ExternalLink
 } from "lucide-react";
 
 export default function StopTheSteelCampaign() {
-  const [currentDate, setCurrentDate] = useState(new Date(2025, 5, 13));
+  const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [selectedRegion, setSelectedRegion] = useState("전체");
   const [isRegionDropdownOpen, setIsRegionDropdownOpen] = useState(false);
@@ -22,6 +23,8 @@ export default function StopTheSteelCampaign() {
   const eventRefs = useRef({});
 
   const regions = ["전체", "서울", "경기", "강원", "충청", "전라", "경상", "제주"];
+
+  const [daysSinceTaken, setDaysSinceTaken] = useState(0);
 
   useEffect(() => {
     const loadScheduleData = async () => {
@@ -41,6 +44,13 @@ export default function StopTheSteelCampaign() {
       }
     };
     loadScheduleData();
+
+    const today = new Date();
+    const baseDate = new Date(2025, 5, 3);
+    const diffTime = today.getTime() - baseDate.getTime();
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    setDaysSinceTaken(diffDays);
+
   }, []);
 
   useEffect(() => {
@@ -124,9 +134,9 @@ export default function StopTheSteelCampaign() {
     const firstDay = getFirstDayOfMonth(currentDate);
     const days = [];
     const eventDays = getEventDaysForCurrentMonth();
-    
+
     for (let i = 0; i < firstDay; i++) days.push(<div key={`empty-${i}`} className="w-10 h-10"></div>);
-    
+
     for (let day = 1; day <= daysInMonth; day++) {
       const hasEvent = eventDays.includes(day);
       const isSelected = day === selectedDay;
@@ -142,7 +152,7 @@ export default function StopTheSteelCampaign() {
         >{day}</div>
       );
     }
-    
+
     const totalCells = Math.ceil((firstDay + daysInMonth) / 7) * 7;
     const remainingCells = totalCells - (firstDay + daysInMonth);
     for (let day = 1; day <= remainingCells; day++) {
@@ -172,8 +182,8 @@ export default function StopTheSteelCampaign() {
       <div className="max-w-md mx-auto bg-gray-200 h-screen flex items-center justify-center">
         <div className="text-center p-6">
           <p className="text-red-500 mb-4">{error}</p>
-          <button 
-            onClick={() => window.location.reload()} 
+          <button
+            onClick={() => window.location.reload()}
             className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
           >다시 시도</button>
         </div>
@@ -186,13 +196,16 @@ export default function StopTheSteelCampaign() {
       {/* Main Campaign Banner - Fixed */}
       <div className="bg-red-500 text-white px-6 py-6 flex-shrink-0">
         <h1 className="text-3xl font-bold mb-2">STOP THE STEEL</h1>
-        <p className="text-lg mb-4">6월 13일, 빼앗긴 지 10일째</p>
-        
+        <p className="text-sm mb-4">
+          <span className="text-xl font-bold">{`${currentDate.getMonth() + 1}월 ${currentDate.getDate()}일`}</span>
+          {`, 빼앗긴 지 ${daysSinceTaken}일째`}
+        </p>
+
         {/* Audio Notice */}
         <div className="bg-white text-gray-800 rounded-lg p-4">
           <div className="flex items-center mb-2">
             <Volume2 className="w-5 h-5 text-red-500 mr-3" />
-            <span className="font-medium text-red-500">급일 사위 임정</span>
+            <span className="font-medium text-red-500">급일 집회 일정</span>
           </div>
           <div className="border-t pt-2">
             <p className="text-gray-800 font-medium">서조 집회 / 홍대 행진 집회</p>
@@ -214,14 +227,14 @@ export default function StopTheSteelCampaign() {
             </button>
           </div>
           <div className="relative">
-            <button 
+            <button
               onClick={() => setIsRegionDropdownOpen(!isRegionDropdownOpen)}
               className="flex items-center text-gray-600 border border-gray-300 rounded px-3 py-1 hover:bg-gray-50"
             >
               <span className="text-sm">{selectedRegion}</span>
               <ChevronDown className={`w-4 h-4 ml-2 transition-transform ${isRegionDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
-            
+
             {/* Dropdown Menu */}
             {isRegionDropdownOpen && (
               <div className="absolute right-0 top-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-10 min-w-[100px]">
@@ -232,9 +245,8 @@ export default function StopTheSteelCampaign() {
                       setSelectedRegion(region);
                       setIsRegionDropdownOpen(false);
                     }}
-                    className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 first:rounded-t-lg last:rounded-b-lg ${
-                      selectedRegion === region ? 'bg-red-50 text-red-600 font-medium' : 'text-gray-700'
-                    }`}
+                    className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 first:rounded-t-lg last:rounded-b-lg ${selectedRegion === region ? 'bg-red-50 text-red-600 font-medium' : 'text-gray-700'
+                      }`}
                   >
                     {region}
                   </button>
@@ -249,9 +261,8 @@ export default function StopTheSteelCampaign() {
           {/* Day Headers */}
           <div className="grid grid-cols-7 gap-1 mb-2">
             {['일', '월', '화', '수', '목', '금', '토'].map((day, index) => (
-              <div key={day} className={`text-center text-sm font-medium py-2 ${
-                index === 0 ? 'text-red-500' : 'text-gray-600'
-              }`}>
+              <div key={day} className={`text-center text-sm font-medium py-2 ${index === 0 ? 'text-red-500' : 'text-gray-600'
+                }`}>
                 {day}
               </div>
             ))}
@@ -264,7 +275,7 @@ export default function StopTheSteelCampaign() {
       </div>
 
       {/* Scrollable Event List */}
-      <div 
+      <div
         className="flex-1 overflow-y-auto px-6 py-4 bg-pink-50"
         ref={eventListRef}
       >
@@ -272,8 +283,8 @@ export default function StopTheSteelCampaign() {
           {filteredEvents.length > 0 ? (
             <>
               {filteredEvents.map((event, index) => (
-                <div 
-                  key={event.id} 
+                <div
+                  key={event.id}
                   ref={el => eventRefs.current[event.id] = el}
                   className="bg-white rounded-lg p-4 flex items-center justify-between shadow-sm cursor-pointer hover:bg-gray-50 transition-colors"
                   onClick={() => handleEventClick(event)}
@@ -300,26 +311,30 @@ export default function StopTheSteelCampaign() {
       </div>
 
       {/* Fixed Bottom Contact Bar */}
-      <div className="bg-white border-t flex-shrink-0">
+      {/* <div className="bg-white border-t flex-shrink-0">
         <div className="px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex-1">
-              <p className="text-gray-800 font-bold mb-1">[사위] 정보 공유 이메일</p>
-              <p className="text-red-500 font-medium">stopthestealkoreao2025@gmail.com</p>
-              <p className="text-xs text-gray-500 mt-1">faith&love / Summer / Noah</p>
+              <p className="text-gray-800 font-bold mb-1">[집회] 정보 공유 이메일 보내기</p>
+              <p className="text-red-500 font-medium">stopthestealkorea2025@gmail.com</p>
             </div>
-            <div className="w-12 h-8 bg-white border-2 border-red-500 rounded flex items-center justify-center ml-4">
-              <div className="w-6 h-4 bg-red-500 rounded-sm flex items-center justify-center">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-              </div>
-            </div>
+            <img src="./flag.png" />
           </div>
         </div>
+      </div> */}
+<a href="mailto:stopthesteelkorea2025@gmail.com" className="block bg-white border-t flex-shrink-0 hover:bg-gray-50 transition-colors">
+  <div className="px-6 py-4 cursor-pointer">
+    <div className="flex items-center justify-between">
+      <div className="flex-1">
+        <p className="text-gray-800 font-bold mb-1">[집회] 정보 공유 이메일 보내기</p>
+        <p className="text-red-500 font-medium">stopthesteelkorea2025@gmail.com</p>
       </div>
-
-      {/* Modal */}
+      <img src="./flag.png" alt="Flag" className="w-16 h-16 object-contain" />
+    </div>
+  </div>
+</a>
       {selectedEvent && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
           onClick={(e) => {
             if (e.target === e.currentTarget) {
@@ -331,67 +346,102 @@ export default function StopTheSteelCampaign() {
             {/* Modal Header */}
             <div className="flex items-center justify-between p-4 border-b">
               <h2 className="text-lg font-bold text-red-500">{selectedEvent.description}</h2>
-              <button 
+              <button
                 onClick={() => setSelectedEvent(null)}
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200"
               >
                 <X className="w-5 h-5 text-gray-600" />
               </button>
             </div>
-            
+
             {/* Modal Content */}
             <div className="p-4">
               {/* Poster Image */}
               <div className="mb-4">
-                <img 
-                  src={selectedEvent.posterImage} 
+                <img
+                  src={selectedEvent.posterImage}
                   alt={`${selectedEvent.description} 포스터`}
                   className="w-full h-64 object-cover rounded-lg bg-gray-800 flex items-center justify-center text-white"
                 />
               </div>
-              
+
               {/* Event Details */}
               <div className="space-y-4">
                 <div className="flex items-start">
                   <span className="text-gray-600 font-medium mr-4 min-w-[60px]">장소</span>
-                  <span className="text-red-500 font-bold">{selectedEvent.location}</span>
+                  <div className="flex items-center">
+                    <span className="text-red-500 font-bold">{selectedEvent.location}</span>
+                    <button className="ml-2 w-16 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
+                      <ExternalLink className="w-4 h-4 mr-1" />
+                      <span className="text-gray-600 text-sm">지도</span>
+                    </button>
+                  </div>
                 </div>
-                
-                <div className="flex items-center">
-                  <button className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm flex items-center hover:bg-gray-200 transition-colors">
-                    네이버 지도에서 열기
-                    <span className="ml-2">↗</span>
-                  </button>
-                </div>
-                
+
                 <div className="flex items-start">
                   <span className="text-gray-600 font-medium mr-4 min-w-[60px]">시간</span>
                   <span className="text-red-500 font-bold">{selectedEvent.fullTime}</span>
                 </div>
-                
-                <div className="flex items-center">
-                  <button className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm flex items-center hover:bg-gray-200 transition-colors">
+
+                <div className="flex items-center gap-2">
+                  <button
+                    className="flex-1 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm flex items-center justify-center hover:bg-gray-200 transition-colors"
+                    onClick={() => {
+                      const now = new Date();
+                      const [monthStr, dayStr] = selectedEvent.date.split("/"); // "6/12" → ["6", "12"]
+                      const [hourStr, minuteStr] = selectedEvent.time.split(":"); // "20:00" → ["20", "00"]
+
+                      const year = now.getFullYear(); // 올해로 가정
+                      const start = new Date(year, Number(monthStr) - 1, Number(dayStr), Number(hourStr), Number(minuteStr));
+                      const end = new Date(start.getTime() + 60 * 60 * 1000); // 종료시간은 시작 후 1시간으로 가정
+
+                      const pad = (n) => String(n).padStart(2, '0');
+                      const formatDate = (date) => {
+                        return `${date.getUTCFullYear()}${pad(date.getUTCMonth() + 1)}${pad(date.getUTCDate())}T${pad(date.getUTCHours())}${pad(date.getUTCMinutes())}00Z`;
+                      };
+
+                      const icsContent = `
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//YourApp//ScheduleEvent//EN
+BEGIN:VEVENT
+UID:${Date.now()}@yourapp.com
+DTSTAMP:${formatDate(new Date())}
+DTSTART:${formatDate(start)}
+DTEND:${formatDate(end)}
+SUMMARY:${selectedEvent.title}
+LOCATION:${selectedEvent.location}
+DESCRIPTION:${selectedEvent.description}
+END:VEVENT
+END:VCALENDAR`.trim();
+
+                      const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+                      const link = document.createElement('a');
+                      link.href = URL.createObjectURL(blob);
+                      link.download = `${selectedEvent.title}.ics`;
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+                  >
                     <Calendar className="w-4 h-4 mr-2" />
                     내 캘린더에 추가
                   </button>
+
+                  <button className="flex-1 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-medium flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <Share2 className="w-4 h-4 mr-2" />
+                    함께 하기
+                  </button>
                 </div>
-              </div>
-              
-              {/* Share Button */}
-              <div className="mt-6">
-                <button className="w-full bg-red-500 text-white py-3 rounded-lg font-medium flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <Share2 className="w-5 h-5 mr-2" />
-                  함께 하기
-                </button>
               </div>
             </div>
           </div>
         </div>
       )}
-      
+
       {/* Dropdown 외부 클릭 시 닫기 */}
       {isRegionDropdownOpen && (
-        <div 
+        <div
           className="fixed inset-0 z-5"
           onClick={() => setIsRegionDropdownOpen(false)}
         />
