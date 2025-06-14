@@ -67,7 +67,7 @@ SUMMARY:${n.title}
 LOCATION:${n.location}
 DESCRIPTION:${n.description}
 END:VEVENT
-END:VCALENDAR`.trim(),Ke=new Blob([yn],{type:"text/calendar;charset=utf-8"}),Ae=document.createElement("a");Ae.href=URL.createObjectURL(Ke),Ae.download=`${n.title}.ics`,document.body.appendChild(Ae),Ae.click(),document.body.removeChild(Ae)},children:[g.jsx(Fd,{className:"w-4 h-4 mr-2"}),"내 캘린더에 추가"]}),g.jsxs("button",{className:"flex-1 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-medium flex items-center justify-center hover:bg-red-600 transition-colors",onClick:()=>{const{title:N,description:I,location:M,date:k,time:j}=n,P=`[집회 알림] ${N}
+END:VCALENDAR`.trim(),Ke=new Blob([yn],{type:"text/calendar;charset=utf-8"}),Ae=document.createElement("a");Ae.href=URL.createObjectURL(Ke),Ae.download=`${n.title}.ics`,document.body.appendChild(Ae),Ae.click(),document.body.removeChild(Ae)},children:[g.jsx(Fd,{className:"w-4 h-4 mr-2"}),"캘린더에 추가"]}),g.jsxs("button",{className:"flex-1 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-medium flex items-center justify-center hover:bg-red-600 transition-colors",onClick:()=>{const{title:N,description:I,location:M,date:k,time:j}=n,P=`[집회 알림] ${N}
 날짜: ${k}, 시간: ${j}
 장소: ${M}
 

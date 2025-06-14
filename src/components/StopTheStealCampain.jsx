@@ -470,7 +470,7 @@ END:VCALENDAR`.trim();
                     }}
                   >
                     <Calendar className="w-4 h-4 mr-2" />
-                    내 캘린더에 추가
+                    캘린더에 추가
                   </button>
 
                   <button
