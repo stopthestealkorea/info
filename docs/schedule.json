@@ -27,7 +27,7 @@
     },
     {
       "id": 3,
-      "date": "6/12",
+      "date": "6/14",
       "title": "서조 집회 저녁 8시", 
       "time": "20:00",
       "location": "서조역 7번 출구",
@@ -35,7 +35,7 @@
       "description": "서조집회",
       "posterImage": "https://via.placeholder.com/300x400/2d5a3d/ffffff?text=서조집회+포스터",
       "region": "서울",
-      "day": 12
+      "day": 14
     },
     {
       "id": 4,

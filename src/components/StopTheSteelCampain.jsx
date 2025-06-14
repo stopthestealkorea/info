@@ -26,6 +26,30 @@ export default function StopTheSteelCampaign() {
 
   const [daysSinceTaken, setDaysSinceTaken] = useState(0);
 
+  // Add CSS for marquee animation
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+      
+      .animate-marquee {
+        animation: marquee 15s linear infinite;
+      }
+      
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
+    `;
+    document.head.appendChild(style);
+    
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   useEffect(() => {
     const loadScheduleData = async () => {
       try {
@@ -201,14 +225,36 @@ export default function StopTheSteelCampaign() {
           {`, 빼앗긴 지 ${daysSinceTaken}일째`}
         </p>
 
-        {/* Audio Notice */}
-        <div className="bg-white text-gray-800 rounded-lg p-4">
-          <div className="flex items-center mb-2">
-            <Volume2 className="w-5 h-5 text-red-500 mr-3" />
-            <span className="font-medium text-red-500">금일 집회 일정</span>
-          </div>
-          <div className="border-t pt-2">
-            <p className="text-gray-800 font-medium">없음</p>
+        {/* Today's Schedule Ticker */}
+        <div className="bg-white text-gray-800 rounded-lg p-3">
+          <div className="flex items-center">
+            <Volume2 className="w-5 h-5 text-red-500 mr-2 flex-shrink-0" />
+            <span className="text-red-600 font-medium mr-3">금일 집회 : </span>
+            <div className="min-w-0 flex-1 overflow-hidden">
+              <div className="relative h-6 flex items-center animate-marquee">
+                <div className="absolute whitespace-nowrap">
+                  {(() => {
+                    const today = new Date();
+                    const todayMonth = today.getMonth() + 1;
+                    const todayDay = today.getDate();
+                    
+                    const todayEvents = (scheduleData?.events || []).filter(event => 
+                      (event.month || 6) === todayMonth && event.day === todayDay
+                    );
+                    
+                    if (todayEvents.length === 0) {
+                      return <span className="text-gray-600 font-medium">없음</span>;
+                    }
+                    
+                    const eventText = todayEvents.map(event => 
+                      `${event.title}`
+                    ).join(' • ');
+                    
+                    return <span className="text-red-600 font-medium">{eventText}</span>;
+                  })()}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -311,29 +357,17 @@ export default function StopTheSteelCampaign() {
       </div>
 
       {/* Fixed Bottom Contact Bar */}
-      {/* <div className="bg-white border-t flex-shrink-0">
-        <div className="px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex-1">
-              <p className="text-gray-800 font-bold mb-1">[집회] 정보 공유 이메일 보내기</p>
-              <p className="text-red-500 font-medium">stopthestealkorea2025@gmail.com</p>
-            </div>
-            <img src="./flag.png" />
-          </div>
+      <a
+        href="mailto:stopthesteelkorea2025@gmail.com"
+        className="fixed bottom-6 right-6 z-50 bg-white rounded-full shadow-lg border hover:bg-gray-100 transition-colors"
+      >
+        <div className="flex items-center px-4 py-2">
+          <span className="text-sm font-semibold text-gray-800 mr-2 whitespace-nowrap">
+            집회 정보 공유
+          </span>
+          <img src="./flag.png" alt="Flag" className="w-8 h-8 object-contain" />
         </div>
-      </div> */}
-
-<a
-  href="mailto:stopthesteelkorea2025@gmail.com"
-  className="fixed bottom-6 right-6 z-50 bg-white rounded-full shadow-lg border hover:bg-gray-100 transition-colors"
->
-  <div className="flex items-center px-4 py-2">
-    <span className="text-sm font-semibold text-gray-800 mr-2 whitespace-nowrap">
-      집회 정보 공유
-    </span>
-    <img src="./flag.png" alt="Flag" className="w-8 h-8 object-contain" />
-  </div>
-</a>
+      </a>
 
       {selectedEvent && (
         <div
