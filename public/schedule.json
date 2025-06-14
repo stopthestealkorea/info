@@ -10,6 +10,7 @@
       "fullTime": "토요일 오후 2시",
       "description": "서조집회",
       "posterImage": "https://via.placeholder.com/300x400/2d5a3d/ffffff?text=서조집회+포스터",
+      "mapUrl": "https://naver.me/xPvIZ1x7",
       "region": "서울",
       "day": 12
     },
@@ -22,6 +23,7 @@
       "fullTime": "토요일 오후 2시",
       "description": "홍대 행진 집회",
       "posterImage": "https://via.placeholder.com/300x400/8b2635/ffffff?text=홍대행진+포스터",
+      "mapUrl": "https://naver.me/xPvIZ1x7",
       "region": "서울",
       "day": 12
     },
@@ -34,6 +36,7 @@
       "fullTime": "토요일 오후 2시",
       "description": "서조집회",
       "posterImage": "https://via.placeholder.com/300x400/2d5a3d/ffffff?text=서조집회+포스터",
+      "mapUrl": "https://naver.me/xPvIZ1x7",
       "region": "서울",
       "day": 14
     },
@@ -46,6 +49,7 @@
       "fullTime": "일요일 오후 7시",
       "description": "수원 집회",
       "posterImage": "https://via.placeholder.com/300x400/4a5568/ffffff?text=수원집회+포스터",
+      "mapUrl": "https://naver.me/xPvIZ1x7",
       "region": "경기",
       "day": 19
     },
@@ -59,6 +63,7 @@
       "description": "춘천 집회",
       "posterImage": "https://via.placeholder.com/300x400/744210/ffffff?text=춘천집회+포스터",
       "region": "강원",
+      "mapUrl": "https://naver.me/xPvIZ1x7",
       "day": 26
     },
     {
@@ -71,6 +76,7 @@
       "description": "대전 집회",
       "posterImage": "https://via.placeholder.com/300x400/2563eb/ffffff?text=대전집회+포스터",
       "region": "충청",
+      "mapUrl": "https://naver.me/xPvIZ1x7",
       "day": 3,
       "month": 7
     }

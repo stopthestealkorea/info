@@ -44,7 +44,7 @@ export default function StopTheSteelCampaign() {
       }
     `;
     document.head.appendChild(style);
-    
+
     return () => {
       document.head.removeChild(style);
     };
@@ -237,19 +237,19 @@ export default function StopTheSteelCampaign() {
                     const today = new Date();
                     const todayMonth = today.getMonth() + 1;
                     const todayDay = today.getDate();
-                    
-                    const todayEvents = (scheduleData?.events || []).filter(event => 
+
+                    const todayEvents = (scheduleData?.events || []).filter(event =>
                       (event.month || 6) === todayMonth && event.day === todayDay
                     );
-                    
+
                     if (todayEvents.length === 0) {
                       return <span className="text-gray-600 font-medium">없음</span>;
                     }
-                    
-                    const eventText = todayEvents.map(event => 
+
+                    const eventText = todayEvents.map(event =>
                       `${event.title}`
                     ).join(' • ');
-                    
+
                     return <span className="text-red-600 font-medium">{eventText}</span>;
                   })()}
                 </div>
@@ -407,7 +407,16 @@ export default function StopTheSteelCampaign() {
                   <span className="text-gray-600 font-medium mr-4 min-w-[60px]">장소</span>
                   <div className="flex items-center">
                     <span className="text-red-500 font-bold">{selectedEvent.location}</span>
-                    <button className="ml-2 w-16 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
+                    <button
+                      onClick={() => {
+                        if (selectedEvent.mapUrl) {
+                          window.open(selectedEvent.mapUrl, "_blank");
+                        } else {
+                          alert("지도 링크가 제공되지 않았습니다.");
+                        }
+                      }}
+                      className="ml-2 w-16 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+                    >
                       <ExternalLink className="w-4 h-4 mr-1" />
                       <span className="text-gray-600 text-sm">지도</span>
                     </button>
@@ -464,7 +473,26 @@ END:VCALENDAR`.trim();
                     내 캘린더에 추가
                   </button>
 
-                  <button className="flex-1 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-medium flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <button
+                    className="flex-1 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-medium flex items-center justify-center hover:bg-red-600 transition-colors"
+                    onClick={() => {
+                      const { title, description, location, date, time } = selectedEvent;
+                      const shareText = `[집회 알림] ${title}\n날짜: ${date}, 시간: ${time}\n장소: ${location}\n\n${description}`;
+                      const shareUrl = window.location.href;
+
+                      if (navigator.share) {
+                        navigator
+                          .share({
+                            title: `STOP THE STEEL - ${title}`,
+                            text: shareText,
+                            url: shareUrl,
+                          })
+                          .catch(err => console.error("공유 실패:", err));
+                      } else {
+                        alert("현재 브라우저에서는 공유 기능을 지원하지 않습니다.");
+                      }
+                    }}
+                  >
                     <Share2 className="w-4 h-4 mr-2" />
                     함께 하기
                   </button>
