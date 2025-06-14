@@ -194,8 +194,8 @@ export default function StopTheSteelCampaign() {
   return (
     <div className="max-w-md mx-auto bg-gray-200 h-screen flex flex-col overflow-hidden">
       {/* Main Campaign Banner - Fixed */}
-      <div className="bg-red-500 text-white px-6 py-6 flex-shrink-0">
-        <h1 className="text-3xl font-bold mb-2">STOP THE STEEL</h1>
+      <div className="bg-red-500 text-white px-6 py-4 flex-shrink-0">
+        <h1 className="text-3xl font-bold mb-1">STOP THE STEEL</h1>
         <p className="text-sm mb-4">
           <span className="text-xl font-bold">{`${currentDate.getMonth() + 1}월 ${currentDate.getDate()}일`}</span>
           {`, 빼앗긴 지 ${daysSinceTaken}일째`}
@@ -322,17 +322,19 @@ export default function StopTheSteelCampaign() {
           </div>
         </div>
       </div> */}
-<a href="mailto:stopthesteelkorea2025@gmail.com" className="block bg-white border-t flex-shrink-0 hover:bg-gray-50 transition-colors">
-  <div className="px-6 py-4 cursor-pointer">
-    <div className="flex items-center justify-between">
-      <div className="flex-1">
-        <p className="text-gray-800 font-bold mb-1">[집회] 정보 공유 이메일 보내기</p>
-        <p className="text-red-500 font-medium">stopthesteelkorea2025@gmail.com</p>
-      </div>
-      <img src="./flag.png" alt="Flag" className="w-16 h-16 object-contain" />
-    </div>
+
+<a
+  href="mailto:stopthesteelkorea2025@gmail.com"
+  className="fixed bottom-6 right-6 z-50 bg-white rounded-full shadow-lg border hover:bg-gray-100 transition-colors"
+>
+  <div className="flex items-center px-4 py-2">
+    <span className="text-sm font-semibold text-gray-800 mr-2 whitespace-nowrap">
+      집회 정보 공유
+    </span>
+    <img src="./flag.png" alt="Flag" className="w-8 h-8 object-contain" />
   </div>
 </a>
+
       {selectedEvent && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
