@@ -1,7 +1,7 @@
-import StopTheSteelCampaign from "./components/StopTheSteelCampain"
+import StopTheStealCampaign from "./components/StopTheStealCampain"
 
 function App() {
-  return <StopTheSteelCampaign />
+  return <StopTheStealCampaign />
 }
 
 export default App

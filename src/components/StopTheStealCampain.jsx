@@ -10,7 +10,7 @@ import {
   ExternalLink
 } from "lucide-react";
 
-export default function StopTheSteelCampaign() {
+export default function StopTheStealCampaign() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [selectedRegion, setSelectedRegion] = useState("전체");
@@ -219,7 +219,7 @@ export default function StopTheSteelCampaign() {
     <div className="max-w-md mx-auto bg-gray-200 h-screen flex flex-col overflow-hidden">
       {/* Main Campaign Banner - Fixed */}
       <div className="bg-red-500 text-white px-6 py-4 flex-shrink-0">
-        <h1 className="text-3xl font-bold mb-1">STOP THE STEEL</h1>
+        <h1 className="text-3xl font-bold mb-1">STOP THE STEAL</h1>
         <p className="text-sm mb-4">
           <span className="text-xl font-bold">{`${new Date().getMonth() + 1}월 ${new Date().getDate()}일`}</span>
           {`, 빼앗긴 지 ${daysSinceTaken}일째`}
@@ -358,7 +358,7 @@ export default function StopTheSteelCampaign() {
 
       {/* Fixed Bottom Contact Bar */}
       <a
-        href="mailto:stopthesteelkorea2025@gmail.com"
+        href="mailto:stopthestealkorea2025@gmail.com"
         className="fixed bottom-6 right-6 z-50 bg-white rounded-full shadow-lg border hover:bg-gray-100 transition-colors"
       >
         <div className="flex items-center px-4 py-2">
@@ -483,7 +483,7 @@ END:VCALENDAR`.trim();
                       if (navigator.share) {
                         navigator
                           .share({
-                            title: `STOP THE STEEL - ${title}`,
+                            title: `STOP THE STEAL - ${title}`,
                             text: shareText,
                             url: shareUrl,
                           })
