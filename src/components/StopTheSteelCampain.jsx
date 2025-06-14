@@ -197,7 +197,7 @@ export default function StopTheSteelCampaign() {
       <div className="bg-red-500 text-white px-6 py-4 flex-shrink-0">
         <h1 className="text-3xl font-bold mb-1">STOP THE STEEL</h1>
         <p className="text-sm mb-4">
-          <span className="text-xl font-bold">{`${currentDate.getMonth() + 1}월 ${currentDate.getDate()}일`}</span>
+          <span className="text-xl font-bold">{`${new Date().getMonth() + 1}월 ${new Date().getDate()}일`}</span>
           {`, 빼앗긴 지 ${daysSinceTaken}일째`}
         </p>
 
@@ -205,10 +205,10 @@ export default function StopTheSteelCampaign() {
         <div className="bg-white text-gray-800 rounded-lg p-4">
           <div className="flex items-center mb-2">
             <Volume2 className="w-5 h-5 text-red-500 mr-3" />
-            <span className="font-medium text-red-500">급일 집회 일정</span>
+            <span className="font-medium text-red-500">금일 집회 일정</span>
           </div>
           <div className="border-t pt-2">
-            <p className="text-gray-800 font-medium">서조 집회 / 홍대 행진 집회</p>
+            <p className="text-gray-800 font-medium">없음</p>
           </div>
         </div>
       </div>
