@@ -1,7 +1,7 @@
 {
   "events": [
     {
-      "title": "공룡특공대 행진",
+      "title": "신사-강남 공룡특공대 행진",
       "startDate": "2025-06-18 19:00",
       "endDate": "2025-06-18 20:00",
       "location": "신사역 3번 출구",
@@ -17,6 +17,77 @@
       "posterImage": "/info/poster/1749961992.jpg",
       "mapUrl": "https://naver.me/FqZRowum",
       "region": "서울"
-    }
-  ]
-}
+    },
+  {
+    "title": "매주 월요일 윤카 응원 집회",
+    "startDate": "2025-06-16  09:40" "2025-06-23  09:40" "2025-06-30  09:40",
+    "endDate": null,
+    "location": "서울중앙지방법원 서관",
+    "posterImage": "/info/poster/1.jpg",
+    "mapUrl": "https://naver.me/xS1uMLMF",
+    "region": "서울"
+  },
+  {
+    "title": "녹사평역 자유대학 NOP",
+    "startDate": "2025-06-21 14:00",
+    "endDate": null,
+    "location": "녹사평역 3번 출구",
+    "posterImage": "/info/poster/2.jpg",
+    "mapUrl": "https://naver.me/xQiYhUcK",
+    "region": "서울"
+  },
+  {
+    "title": "샛강역 자유대학 NOP",
+    "startDate": "2025-06-19 19:30",
+    "endDate": null,
+    "location": "샛강역 1번 출구",
+    "posterImage": "/info/poster/3.jpg",
+    "mapUrl": "https://naver.me/5v37zoKH",
+    "region": "서울"
+  },
+  {
+    "title": "부산 정계은퇴 촉구 집회",
+    "startDate": "2025-06-16 15:00",
+    "endDate": null,
+    "location": "조경태 지역구 사무실 앞",
+    "posterImage": "/info/poster/4.jpg",
+    "mapUrl": "https://naver.me/xpr5arPp",
+    "region": "경상"
+  },
+     {
+    "title": "부산 정계은퇴 촉구 집회",
+    "startDate": "2025-06-18 15:00",
+    "endDate": null,
+    "location": "정성국 지역구 사무실 앞",
+    "posterImage": "/info/poster/4.jpg",
+    "mapUrl": "https://naver.me/xen6bwlK",
+    "region": "경상"
+  },
+  {
+    "title": "광화문역 6.3 대선불복",
+    "startDate": "2025-06-18 17:00",
+    "endDate": "2025-12-31 17:00,
+    "location": "광화문역 3번 출구",
+    "posterImage": "/info/poster/5.webp",
+    "mapUrl": "https://naver.me/GDLtJvCz",
+    "region": "서울"
+  },
+  {
+    "title": "명동 자유대학 NOt my President",
+    "startDate": "2025-06-17 18:30",
+    "endDate": null,
+    "location": "명동 서울중앙우체국",
+    "posterImage": "/info/poster/6.jpg",
+    "mapUrl": "https://naver.me/52RfDLxP",
+    "region": "서울"
+  },
+  {
+    "title": "구파발역 부정선거 컨퍼런스",
+    "startDate": "2025-06-17 15:00",
+    "endDate": null,
+    "location": "구파발역",
+    "posterImage": "/info/poster/7.jpg",
+    "mapUrl": "https://naver.me/xuc3qBdL",
+    "region": "서울"
+  }
+]
