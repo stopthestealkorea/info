@@ -15,7 +15,8 @@ export default function StopTheStealCampaign() {
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [selectedRegion, setSelectedRegion] = useState("전체");
   const [isRegionDropdownOpen, setIsRegionDropdownOpen] = useState(false);
-  const [selectedDay, setSelectedDay] = useState(13);
+  const today = new Date();
+  const [selectedDay, setSelectedDay] = useState(today.getDate());
   const [scheduleData, setScheduleData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -53,11 +54,11 @@ export default function StopTheStealCampaign() {
   // 여러 날에 걸친 이벤트를 일별로 분할하는 함수
   const expandMultiDayEvents = (events) => {
     const expandedEvents = [];
-    
+
     events.forEach((event, index) => {
       const startDate = parseDate(event.startDate);
       const endDate = parseDate(event.endDate);
-      
+
       // 같은 날인 경우
       if (startDate.toDateString() === endDate.toDateString()) {
         expandedEvents.push({
@@ -71,14 +72,14 @@ export default function StopTheStealCampaign() {
         // 여러 날에 걸친 경우 각 날짜별로 분할
         const currentDate = new Date(startDate);
         let dayIndex = 0;
-        
+
         while (currentDate <= endDate) {
           const isFirstDay = dayIndex === 0;
           const isLastDay = currentDate.toDateString() === endDate.toDateString();
-          
+
           // 각 날의 시작/종료 시간 계산
           let dayStartTime, dayEndTime;
-          
+
           if (isFirstDay && isLastDay) {
             // 같은 날 (위에서 처리했지만 혹시 모를 경우)
             dayStartTime = new Date(startDate);
@@ -100,7 +101,7 @@ export default function StopTheStealCampaign() {
             dayEndTime = new Date(currentDate);
             dayEndTime.setHours(23, 59, 0, 0);
           }
-          
+
           const formatDateToString = (date) => {
             const year = date.getFullYear();
             const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -109,7 +110,7 @@ export default function StopTheStealCampaign() {
             const minutes = String(date.getMinutes()).padStart(2, '0');
             return `${year}-${month}-${day} ${hours}:${minutes}`;
           };
-          
+
           expandedEvents.push({
             ...event,
             id: index + 1 + dayIndex * 0.1, // 고유 ID 생성 (1, 1.1, 1.2... 형태)
@@ -121,17 +122,17 @@ export default function StopTheStealCampaign() {
             dayIndex,
             originalStartDate: event.startDate,
             originalEndDate: event.endDate,
-            title: isFirstDay ? event.title : 
-                  //  isLastDay ? `${event.title} (종료)` : 
-                   `${event.title} (${dayIndex + 1}일차)`
+            title: isFirstDay ? event.title :
+              //  isLastDay ? `${event.title} (종료)` : 
+              `${event.title} (${dayIndex + 1}일차)`
           });
-          
+
           currentDate.setDate(currentDate.getDate() + 1);
           dayIndex++;
         }
       }
     });
-    
+
     return expandedEvents;
   };
 
@@ -143,7 +144,15 @@ export default function StopTheStealCampaign() {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
         const expandedEvents = expandMultiDayEvents(data.events);
-        
+
+        expandedEvents.sort((a, b) => {
+          const aDate = parseDate(a.startDate);
+          const bDate = parseDate(b.startDate);
+          if (aDate < bDate) return -1;
+          if (aDate > bDate) return 1;
+          return 0;
+        });
+
         setScheduleData({ events: expandedEvents });
         setError(null);
       } catch (err) {
@@ -185,20 +194,20 @@ export default function StopTheStealCampaign() {
   const formatFullTime = (startDateString, endDateString) => {
     const startDate = parseDate(startDateString);
     const endDate = parseDate(endDateString);
-    
+
     const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
     const dayName = days[startDate.getDay()];
-    
+
     const startHour = startDate.getHours();
     const endHour = endDate.getHours();
-    
+
     const formatHour = (hour) => {
       if (hour === 0) return '오전 12시';
       if (hour < 12) return `오전 ${hour}시`;
       if (hour === 12) return '오후 12시';
       return `오후 ${hour - 12}시`;
     };
-    
+    우보
     // return `${dayName} ${formatHour(startHour)} - ${formatHour(endHour)}`;
     return `${dayName} ${formatHour(startHour)}`
   };
@@ -228,16 +237,16 @@ export default function StopTheStealCampaign() {
           if (event) firstVisibleEvent = event;
         }
       });
-      if (firstVisibleEvent) {
-        const eventDate = getDateInfo(firstVisibleEvent.startDate);
-        if (eventDate.day !== selectedDay) {
-          setSelectedDay(eventDate.day);
-          // 이벤트의 월이 현재 달력 월과 다르면 달력도 이동
-          if (eventDate.month !== currentDate.getMonth() + 1) {
-            setCurrentDate(new Date(eventDate.year, eventDate.month - 1, eventDate.day));
-          }
-        }
-      }
+      // if (firstVisibleEvent) {
+      //   const eventDate = getDateInfo(firstVisibleEvent.startDate);
+      //   if (eventDate.day !== selectedDay) {
+      //     setSelectedDay(eventDate.day);
+      //     // 이벤트의 월이 현재 달력 월과 다르면 달력도 이동
+      //     if (eventDate.month !== currentDate.getMonth() + 1) {
+      //       setCurrentDate(new Date(eventDate.year, eventDate.month - 1, eventDate.day));
+      //     }
+      //   }
+      // }
     };
     const container = eventListRef.current;
     if (container) {
@@ -245,6 +254,39 @@ export default function StopTheStealCampaign() {
       return () => container.removeEventListener("scroll", handleScroll);
     }
   }, [scheduleData, selectedDay, currentDate]);
+
+  useEffect(() => {
+    if (!scheduleData || !scheduleData.events?.length) return;
+
+    // 오늘 날짜(시간 0시로)
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+
+    // 오늘 이후의 첫 이벤트 찾기
+    const firstUpcomingEvent = scheduleData.events.find(event => {
+      const eventDate = parseDate(event.startDate);
+      eventDate.setHours(0, 0, 0, 0);
+      return eventDate >= now;
+    });
+
+    if (firstUpcomingEvent) {
+      const eventDateInfo = getDateInfo(firstUpcomingEvent.startDate);
+
+      // 캘린더/목록의 날짜, 월 자동 선택
+      // setCurrentDate(new Date(eventDateInfo.year, eventDateInfo.month - 1, eventDateInfo.day));
+      // setSelecteㅓㅏay(13);
+
+      // 스크롤: 데이터 렌더 이후에 시도
+      setTimeout(() => {
+        const eventKey = `${firstUpcomingEvent.id}-${firstUpcomingEvent.dayIndex || 0}`;
+        const eventElement = eventRefs.current[eventKey];
+        if (eventElement && eventElement.scrollIntoView) {
+          eventElement.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+      }, 200);
+    }
+    // eslint-disable-next-line
+  }, [scheduleData]);
 
   const changeMonth = direction => {
     setCurrentDate(prev => {
@@ -451,7 +493,6 @@ export default function StopTheStealCampaign() {
             )}
           </div>
         </div>
-우보
         {/* Calendar Grid */}
         <div className="bg-white rounded-lg p-4">
           {/* Day Headers */}
@@ -482,9 +523,8 @@ export default function StopTheStealCampaign() {
                 <div
                   key={`${event.id}-${event.dayIndex || 0}`}
                   ref={el => eventRefs.current[`${event.id}-${event.dayIndex || 0}`] = el}
-                  className={`bg-white rounded-lg p-4 flex items-center justify-between shadow-sm cursor-pointer hover:bg-gray-50 transition-colors ${
-                    event.isMultiDay ? 'border-l-4 border-blue-400' : ''
-                  }`}
+                  className={`bg-white rounded-lg p-4 flex items-center justify-between shadow-sm cursor-pointer hover:bg-gray-50 transition-colors ${event.isMultiDay ? 'border-l-4 border-blue-400' : ''
+                    }`}
                   onClick={() => handleEventClick(event)}
                 >
                   <div className="flex items-center">
