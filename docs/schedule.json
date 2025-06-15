@@ -20,7 +20,7 @@
     },
   {
     "title": "매주 월요일 윤카 응원 집회",
-    "startDate": "2025-06-16  09:40" "2025-06-23  09:40" "2025-06-30  09:40",
+    "startDate": "2025-06-16  09:40",
     "endDate": null,
     "location": "서울중앙지방법원 서관",
     "posterImage": "/info/poster/1.jpg",
@@ -28,6 +28,24 @@
     "region": "서울"
   },
   {
+    "title": "매주 월요일 윤카 응원 집회",
+    "startDate":"2025-06-23  09:40",
+    "endDate": null,
+    "location": "서울중앙지방법원 서관",
+    "posterImage": "/info/poster/1.jpg",
+    "mapUrl": "https://naver.me/xS1uMLMF",
+    "region": "서울"
+  },
+ {
+    "title": "매주 월요일 윤카 응원 집회",
+    "startDate": "2025-06-30  09:40",
+    "endDate": null,
+    "location": "서울중앙지방법원 서관",
+    "posterImage": "/info/poster/1.jpg",
+    "mapUrl": "https://naver.me/xS1uMLMF",
+    "region": "서울"
+  },
+    {
     "title": "녹사평역 자유대학 NOP",
     "startDate": "2025-06-21 14:00",
     "endDate": null,
