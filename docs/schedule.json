@@ -91,6 +91,15 @@
             "region": "서울"
         },
         {
+            "title": "홍대 계몽 행진 7th",
+            "startDate": "2025-06-21 17:00",
+            "endDate": "2025-06-21 20:00",
+            "location": "신촌역 7번 출구",
+            "posterImage": "/info/poster/9.webp",
+            "mapUrl": "https://naver.me/Gn0EUbk5",
+            "region": "서울"
+        },
+        {
             "title": "매주 월요일 윤카 응원 집회",
             "startDate": "2025-06-23 09:40",
             "endDate": "2025-06-23 12:40",
