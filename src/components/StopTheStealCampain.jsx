@@ -207,7 +207,6 @@ export default function StopTheStealCampaign() {
       if (hour === 12) return '오후 12시';
       return `오후 ${hour - 12}시`;
     };
-    우보
     // return `${dayName} ${formatHour(startHour)} - ${formatHour(endHour)}`;
     return `${dayName} ${formatHour(startHour)}`
   };
