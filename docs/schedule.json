@@ -73,6 +73,15 @@
       "region": "서울"
     },
     {
+      "title": "58차 부정선거규탄집회",
+      "startDate": "2025-06-19 16:00:00",
+      "endDate": "2025-06-19 18:00:00",
+      "location": "천안터미널 횡단보도 앞",
+      "posterImage": "/info/poster/16.jpg",
+      "mapUrl": "https://naver.me/5yWLVt6F",
+      "region": "충청"
+    },
+    {
       "title": "샛강역 자유대학 NOP",
       "startDate": "2025-06-19 19:30:00",
       "endDate": "2025-06-19 21:30:00",
@@ -82,22 +91,40 @@
       "region": "서울"
     },
     {
-      "title": "MAKE KOREA GREAT AGAIN(부산)",
+      "title": "침묵할텐가 소리칠텐가!",
+      "startDate": "2025-06-20 19:00:00",
+      "endDate": "2025-06-20 21:00:00",
+      "location": "명동 중앙우체국",
+      "posterImage": "/info/poster/15.png",
+      "mapUrl": "https://naver.me/52RfDLxP",
+      "region": "서울"
+    },
+    {
+      "title": "서울역 집회",
+      "startDate": "2025-06-20 18:00:00",
+      "endDate": "2025-06-20 20:00:00",
+      "location": "서울역 광장",
+      "posterImage": "/info/poster/19.jpg",
+      "mapUrl": "https://naver.me/II4AVwZ0",
+      "region": "서울"
+    },
+    {
+      "title": "MAKE KOREA GREAT AGAIN",
       "startDate": "2025-06-20 19:30:00",
       "endDate": "2025-06-20 21:30:00",
       "location": "부산",
-      "posterImage": "/info/poster/12.jpeg",
+      "posterImage": "/info/poster/18.jpg",
       "mapUrl": "https://naver.me/5YFgWXrY",
       "region": "경상"
     },
     {
-      "title": "대구 TKYC 사기대선 불복행진",
-      "startDate": "2025-06-20 20:00:00",
-      "endDate": "2025-06-20 22:00:00",
-      "location": "(구) 중앙파출소 동성로 3가",
-      "posterImage": "/info/poster/13.png",
-      "mapUrl": "https://naver.me/55PVPV2W",
-      "region": "경상"
+      "title": "자유시민 대행진",
+      "startDate": "2025-06-21 15:30:00",
+      "endDate": "2025-06-21 17:30:00",
+      "location": "마포구 공덕역 4번 출구",
+      "posterImage": "/info/poster/20.png",
+      "mapUrl": "https://naver.me/GRubuYYv",
+      "region": "서울"
     },
     {
       "title": "녹사평역 자유대학 NOP",
@@ -106,15 +133,6 @@
       "location": "녹사평역 3번 출구",
       "posterImage": "/info/poster/2.jpg",
       "mapUrl": "https://naver.me/xQiYhUcK",
-      "region": "서울"
-    },
-    {
-      "title": "2025 이재명 당선무효 판결, 범죄선거 즉각수사 촉구 자유시민 대행진",
-      "startDate": "2025-06-21 15:30:00",
-      "endDate": "2025-06-21 17:30:00",
-      "location": "공덕역 4번 출구",
-      "posterImage": "/info/poster/14.jpg",
-      "mapUrl": "https://naver.me/GRubuYYv",
       "region": "서울"
     },
     {
@@ -145,7 +163,7 @@
       "region": "경상"
     },
     {
-      "title": "MAKE KOREA GREAT AGAIN(대구)",
+      "title": "MAKE KOREA GREAT AGAIN",
       "startDate": "2025-06-21 19:30:00",
       "endDate": "2025-06-21 21:30:00",
       "location": "대구",
@@ -154,7 +172,7 @@
       "region": "경상"
     },
     {
-      "title": "MAKE KOREA GREAT AGAIN(대전)",
+      "title": "MAKE KOREA GREAT AGAIN",
       "startDate": "2025-06-22 19:30:00",
       "endDate": "2025-06-22 21:30:00",
       "location": "대전",
@@ -172,7 +190,7 @@
       "region": "서울"
     },
     {
-      "title": "MAKE KOREA GREAT AGAIN(인천)",
+      "title": "MAKE KOREA GREAT AGAIN",
       "startDate": "2025-06-24 19:30:00",
       "endDate": "2025-06-24 21:30:00",
       "location": "인천",
@@ -181,13 +199,22 @@
       "region": "경기"
     },
     {
-      "title": "MAKE KOREA GREAT AGAIN(서울)",
+      "title": "MAKE KOREA GREAT AGAIN",
       "startDate": "2025-06-25 19:30:00",
       "endDate": "2025-06-25 21:30:00",
       "location": "서울",
       "posterImage": "/info/poster/12.jpeg",
       "mapUrl": "https://naver.me/GWiPor18",
       "region": "서울"
+    },
+    {
+      "title": "59차 부정선거규탄집회",
+      "startDate": "2025-06-26 16:00:00",
+      "endDate": "2025-06-26 18:00:00",
+      "location": "천안터미널 횡단보도 앞",
+      "posterImage": "/info/poster/17.jpg",
+      "mapUrl": "https://naver.me/5yWLVt6F",
+      "region": "충청"
     },
     {
       "title": "매주 월요일 윤카 응원 집회",
