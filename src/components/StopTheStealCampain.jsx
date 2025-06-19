@@ -198,10 +198,9 @@ export default function StopTheStealCampaign() {
     const startHour = startDate.getHours();
     const startMinute = String(startDate.getMinutes()).padStart(2, '0');
     const formatHour = (hour, minute) => {
-      if (hour === 0) return `오전 12시${minute !== '00' ? ` ${minute}분` : ''}`;
-      if (hour < 12) return `오전 ${hour}시${minute !== '00' ? ` ${minute}분` : ''}`;
-      if (hour === 12) return `오후 12시${minute !== '00' ? ` ${minute}분` : ''}`;
-      return `오후 ${hour - 12}시${minute !== '00' ? ` ${minute}분` : ''}`;
+      const ampm = hour < 12 ? '오전' : '오후';
+      const hour12 = hour % 12 === 0 ? 12 : hour % 12;
+      return `${ampm} ${hour12}시${minute !== '00' ? ` ${minute}분` : ''}`;
     };
     return `${dayName} ${formatHour(startHour, startMinute)}`;
   };
