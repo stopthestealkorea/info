@@ -177,8 +177,12 @@ export default function StopTheStealCampaign() {
   const parseDate = (dateString) => {
     const [datePart, timePart] = dateString.split(' ');
     const [year, month, day] = datePart.split('-').map(Number);
-    const [hour, minute] = timePart.split(':').map(Number);
-    return new Date(year, month - 1, day, hour, minute);
+    const timeParts = timePart.split(':').map(Number);
+    const hour = timeParts[0];
+    const minute = timeParts[1];
+    // 초(seconds)가 있으면 사용, 없으면 0으로 설정
+    const second = timeParts.length > 2 ? timeParts[2] : 0;
+    return new Date(year, month - 1, day, hour, minute, second);
   };
 
   const formatDate = (dateString) => {
