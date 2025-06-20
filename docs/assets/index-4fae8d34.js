@@ -72,4 +72,3 @@ END:VCALENDAR`.trim(),U=new Blob([R],{type:"text/calendar;charset=utf-8"}),z=doc
 장소: ${D}
 
 ${P}`,z=window.location.href;navigator.share?navigator.share({title:`STOP THE STEAL - ${v}`,text:U,url:z}).catch(H=>console.error("공유 실패:",H)):alert("현재 브라우저에서는 공유 기능을 지원하지 않습니다.")},children:[w.jsx(bd,{className:"w-4 h-4 mr-2"}),"함께 하기"]})]})]})]})]})}),i&&w.jsx("div",{className:"fixed inset-0 z-5",onClick:()=>u(!1)})]})}function rp(){return w.jsx(np,{})}to.createRoot(document.getElementById("root")).render(w.jsx(Mc.StrictMode,{children:w.jsx(rp,{})}));
-index-4fae8d34.js
