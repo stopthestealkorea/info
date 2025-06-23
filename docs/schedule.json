@@ -280,6 +280,15 @@
             "region": "서울"
         },
         {
+            "title": "MAKE KOREA GREAT AGAIN - 대구",
+            "startDate": "2025-06-25 20:00:00",
+            "endDate": "2025-06-25 23:00:00",
+            "location": "중앙파출소 삼거리",
+            "posterImage": "/info/poster/32.jpeg",
+            "mapUrl": "https://naver.me/xaP6JFWc",
+            "region": "경상"
+        },
+        {
             "title": "59차 부정선거규탄집회",
             "startDate": "2025-06-26 16:00:00",
             "endDate": "2025-06-26 18:00:00",
@@ -287,6 +296,15 @@
             "posterImage": "/info/poster/17.jpg",
             "mapUrl": "https://naver.me/5yWLVt6F",
             "region": "충청"
+        },
+        {
+            "title": "홍대 계몽 행진 8th",
+            "startDate": "2025-06-28 17:00:00",
+            "endDate": "2025-06-28 20:00:00",
+            "location": "신촌역 7번 출구(2호선)",
+            "posterImage": "/info/poster/31.png",
+            "mapUrl": "https://naver.me/IxDv8eSL",
+            "region": "서울"
         },
         {
             "title": "매주 월요일 윤카 응원 집회",
