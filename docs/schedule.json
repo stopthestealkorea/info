@@ -298,6 +298,15 @@
             "region": "경상"
         },
         {
+            "title": "김용현 장관 응원 집회",
+            "startDate": "2025-06-25 24:00:00",
+            "endDate": "2025-06-26 03:00:00",
+            "location": "동부 구치소 정문 앞",
+            "posterImage": "/info/poster/37.jpeg",
+            "mapUrl": "https://naver.me/G8hdbQ4d",
+            "region": "서울"
+        },
+        {
             "title": "59차 부정선거규탄집회",
             "startDate": "2025-06-26 16:00:00",
             "endDate": "2025-06-26 18:00:00",
@@ -305,6 +314,24 @@
             "posterImage": "/info/poster/17.jpg",
             "mapUrl": "https://naver.me/5yWLVt6F",
             "region": "충청"
+        },
+        {
+            "title": "STOP THE STEAL, TOGETHER",
+            "startDate": "2025-06-26 22:00:00",
+            "endDate": "2025-06-27 03:00:00",
+            "location": "서울역 광장",
+            "posterImage": "/info/poster/35.jpeg",
+            "mapUrl": "https://naver.me/Gzin3f4p",
+            "region": "서울"
+        },
+        {
+            "title": "김용현 장관 응원 집회",
+            "startDate": "2025-06-25 24:00:00",
+            "endDate": "2025-06-26 03:00:00",
+            "location": "동부 구치소 정문 앞",
+            "posterImage": "/info/poster/37.jpeg",
+            "mapUrl": "https://naver.me/G8hdbQ4d",
+            "region": "서울"
         },
         {
             "title": "윤석열 어게인(MAKE YOON GREAT AGAIN)",
@@ -333,5 +360,14 @@
             "mapUrl": "https://naver.me/xS1uMLMF",
             "region": "서울"
         }
+        {
+            "title": "부정선거 의혹 규명하라, 이재명 탄핵을 촉구한다",
+            "startDate": "2025-07-12 12:00:00",
+            "endDate": "2025-07-12 14:00:00",
+            "location": "용산대통령실 전쟁기념관 앞",
+            "posterImage": "/info/poster/36.jpeg",
+            "mapUrl": "https://naver.me/Fir7G5mP",
+            "region": "서울"
+        },
     ]
 }
