@@ -334,6 +334,33 @@
             "region": "서울"
         },
         {
+            "title": "STOP THE STEAL, OUT THE LEE",
+            "startDate": "2025-06-27 18:30:00",
+            "endDate": "2025-06-27 21:30:00",
+            "location": "서울역 광장(서울역 1번 출구)",
+            "posterImage": "/info/poster/39.png",
+            "mapUrl": "https://naver.me/F1RZQJQN",
+            "region": "서울"
+        },
+        {
+            "title": "침묵할텐가 소리칠텐가!",
+            "startDate": "2025-06-27 19:00:00",
+            "endDate": "2025-06-27 22:00:00",
+            "location": "명동 중앙우체국",
+            "posterImage": "/info/poster/38.jpeg",
+            "mapUrl": "https://naver.me/5h7jZJRV",
+            "region": "서울"
+        },
+        {
+            "title": "대구 TKYC 사기탄핵불복행진: 수성못",
+            "startDate": "2025-06-27 20:00:00",
+            "endDate": "2025-06-27 23:00:00",
+            "location": "수성못 그림책도서관 앞",
+            "posterImage": "/info/poster/40.png",
+            "mapUrl": "https://naver.me/xhzsZFnw",
+            "region": "경상"
+        },
+        {
             "title": "윤석열 어게인(MAKE YOON GREAT AGAIN)",
             "startDate": "2025-06-28 15:00:00",
             "endDate": "2025-06-28 18:00:00",
