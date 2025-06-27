@@ -388,6 +388,15 @@
             "region": "서울"
         },
         {
+            "title": "홍대 계몽 행진 9th",
+            "startDate": "2025-07-05 17:30:00",
+            "endDate": "2025-07-05 21:00:00",
+            "location": "홍대입구역 7번 출구 앞 광장",
+            "posterImage": "/info/poster/41.jpeg",
+            "mapUrl": "https://naver.me/GMRpcaLG",
+            "region": "서울"
+        },
+        {
             "title": "부정선거 의혹 규명하라, 이재명 탄핵을 촉구한다",
             "startDate": "2025-07-12 12:00:00",
             "endDate": "2025-07-12 14:00:00",
