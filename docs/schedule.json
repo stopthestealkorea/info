@@ -388,6 +388,15 @@
             "region": "서울"
         },
         {
+            "title": "부정선거 잡는 공룡특공대",
+            "startDate": "2025-07-02 19:00:00",
+            "endDate": "2025-07-02 22:00:00",
+            "location": "신논현역 8번 출구",
+            "posterImage": "/info/poster/42.jpeg",
+            "mapUrl": "https://naver.me/FnnFRrGy",
+            "region": "서울"
+        },
+        {
             "title": "홍대 계몽 행진 9th",
             "startDate": "2025-07-05 17:30:00",
             "endDate": "2025-07-05 21:00:00",
