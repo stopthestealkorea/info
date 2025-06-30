@@ -388,9 +388,18 @@
             "region": "서울"
         },
         {
+            "title": "제60차 부정선거규탄집회",
+            "startDate": "2025-07-03 17:00:00",
+            "endDate": "2025-07-03 18:30:00",
+            "location": "천안터미널 횡단보도 앞",
+            "posterImage": "/info/poster/43.jpeg",
+            "mapUrl": "https://naver.me/G5PCmVGY",
+            "region": "충청"
+        },
+        {
             "title": "부정선거 잡는 공룡특공대",
-            "startDate": "2025-07-02 19:00:00",
-            "endDate": "2025-07-02 22:00:00",
+            "startDate": "2025-07-03 19:00:00",
+            "endDate": "2025-07-03 22:00:00",
             "location": "신논현역 8번 출구",
             "posterImage": "/info/poster/42.jpeg",
             "mapUrl": "https://naver.me/FnnFRrGy",
@@ -412,6 +421,15 @@
             "location": "용산대통령실 전쟁기념관 앞",
             "posterImage": "/info/poster/36.jpeg",
             "mapUrl": "https://naver.me/Fir7G5mP",
+            "region": "서울"
+        },
+        {
+            "title": "홍대계몽행진 11th",
+            "startDate": "2025-07-19 17:30:00",
+            "endDate": "2025-07-19 21:00:00",
+            "location": "홍대입구역 7번 출구 앞 광장",
+            "posterImage": "/info/poster/41.jpeg",
+            "mapUrl": "https://naver.me/GMRpcaLG",
             "region": "서울"
         }
     ]
