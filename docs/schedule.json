@@ -424,6 +424,15 @@
             "region": "서울"
         },
         {
+            "title": "홍대계몽행진 10th",
+            "startDate": "2025-07-12 17:30:00",
+            "endDate": "2025-07-12 21:00:00",
+            "location": "홍대입구역 7번 출구 앞 광장",
+            "posterImage": "/info/poster/45.jpeg",
+            "mapUrl": "https://naver.me/G5PCmVGY",
+            "region": "서울"
+        },
+        {
             "title": "홍대계몽행진 11th",
             "startDate": "2025-07-19 17:30:00",
             "endDate": "2025-07-19 21:00:00",
