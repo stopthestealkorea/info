@@ -388,6 +388,15 @@
             "region": "서울"
         },
         {
+            "title": "Fake President",
+            "startDate": "2025-07-02 19:30:00",
+            "endDate": "2025-07-02 22:30:00",
+            "location": "명동 주한 중국대사관 앞 서울중앙우체국",
+            "posterImage": "/info/poster/47.jpeg",
+            "mapUrl": "https://naver.me/5h7jZJRV",
+            "region": "서울"
+        },
+        {
             "title": "제60차 부정선거규탄집회",
             "startDate": "2025-07-03 17:00:00",
             "endDate": "2025-07-03 18:30:00",
@@ -404,6 +413,15 @@
             "posterImage": "/info/poster/42.jpeg",
             "mapUrl": "https://naver.me/FnnFRrGy",
             "region": "서울"
+        },
+        {
+            "title": "대구 TKYC 사기대선 불복행진",
+            "startDate": "2025-07-04 20:00:00",
+            "endDate": "2025-07-04 23:00:00",
+            "location": "(구) 중앙파출소 삼거리",
+            "posterImage": "/info/poster/46.jpeg",
+            "mapUrl": "https://naver.me/xNnWVn7p",
+            "region": "경상"
         },
         {
             "title": "홍대 계몽 행진 9th",
