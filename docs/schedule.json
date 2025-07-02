@@ -415,6 +415,15 @@
             "region": "서울"
         },
         {
+            "title": "부정선거 당선무효",
+            "startDate": "2025-07-04 19:00:00",
+            "endDate": "2025-07-04 21:30:00",
+            "location": "창원 상남 분수광장",
+            "posterImage": "/info/poster/49.jpeg",
+            "mapUrl": "https://naver.me/F1px5fP5",
+            "region": "경상"
+        },
+        {
             "title": "대구 TKYC 사기대선 불복행진",
             "startDate": "2025-07-04 20:00:00",
             "endDate": "2025-07-04 23:00:00",
@@ -431,6 +440,15 @@
             "posterImage": "/info/poster/41.jpeg",
             "mapUrl": "https://naver.me/GMRpcaLG",
             "region": "서울"
+        },
+        {
+            "title": "부정선거 규탄, 이재명 퇴진 집회",
+            "startDate": "2025-07-05 19:30:00",
+            "endDate": "2025-07-05 22:30:00",
+            "location": "대전역 4번출구 앞",
+            "posterImage": "/info/poster/48.jpeg",
+            "mapUrl": "https://naver.me/Fv7VUsjw",
+            "region": "충청"
         },
         {
             "title": "부정선거 의혹 규명하라, 이재명 탄핵을 촉구한다",
