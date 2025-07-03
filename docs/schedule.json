@@ -415,6 +415,15 @@
             "region": "서울"
         },
         {
+            "title": "Fake President, Stop The Lee",
+            "startDate": "2025-07-04 18:30:00",
+            "endDate": "2025-07-04 21:30:00",
+            "location": "서울역 광장(서울역 1번 출구)",
+            "posterImage": "/info/poster/52png.png",
+            "mapUrl": "https://naver.me/F1RZQJQN",
+            "region": "서울"
+        },
+        {
             "title": "부정선거 당선무효",
             "startDate": "2025-07-04 19:00:00",
             "endDate": "2025-07-04 21:30:00",
@@ -422,6 +431,24 @@
             "posterImage": "/info/poster/49.jpeg",
             "mapUrl": "https://naver.me/F1px5fP5",
             "region": "경상"
+        },
+        {
+            "title": "FAKE PRESIDENT",
+            "startDate": "2025-07-04 19:30:00",
+            "endDate": "2025-07-04 22:30:00",
+            "location": "종각역 3-1번 출구",
+            "posterImage": "/info/poster/51jpeg.jpeg",
+            "mapUrl": "https://naver.me/GdJhP34k",
+            "region": "서울"
+        },
+        {
+            "title": "애국 국민과 함께하는 태극기 행진",
+            "startDate": "2025-07-04 19:50:00",
+            "endDate": "2025-07-04 20:50:00",
+            "location": "명동 중앙우체국건물 앞",
+            "posterImage": "/info/poster/50png.jpeg",
+            "mapUrl": "https://naver.me/5h7jZJRV",
+            "region": "서울"
         },
         {
             "title": "대구 TKYC 사기대선 불복행진",
@@ -449,6 +476,15 @@
             "posterImage": "/info/poster/48.jpeg",
             "mapUrl": "https://naver.me/Fv7VUsjw",
             "region": "충청"
+        },
+        {
+            "title": "가짜대통령 척결 부정선거 알리기 행진",
+            "startDate": "2025-07-06 17:30:00",
+            "endDate": "2025-07-06 21:00:00",
+            "location": "대화역 3번출구(일산)",
+            "posterImage": "/info/poster/51jpeg.jpeg",
+            "mapUrl": "https://naver.me/GkJaFkRH",
+            "region": "경기"
         },
         {
             "title": "부정선거 의혹 규명하라, 이재명 탄핵을 촉구한다",
@@ -484,6 +520,22 @@
             "posterImage": "/info/poster/44.jpeg",
             "mapUrl": "https://naver.me/GMRpcaLG",
             "region": "서울"
+        },
+        {
+            "title": "대전역 광장 부정선거 규탄집회",
+            "startDate": "2025-07-19 19:30:00",
+            "endDate": "2025-07-19 22:30:00",
+            "location": "대전역광장",
+            "mapUrl": "https://naver.me/52gmYJ86",
+            "region": "충청"
+        },
+        {
+            "title": "대전역 광장 부정선거 규탄집회",
+            "startDate": "2025-07-26 19:30:00",
+            "endDate": "2025-07-26 22:30:00",
+            "location": "대전역광장",
+            "mapUrl": "https://naver.me/52gmYJ86",
+            "region": "충청"
         }
     ]
 }
