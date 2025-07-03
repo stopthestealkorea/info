@@ -433,6 +433,15 @@
             "region": "경상"
         },
         {
+            "title": "침묵의 행진",
+            "startDate": "2025-07-04 19:00:00",
+            "endDate": "2025-07-04 21:00:00",
+            "location": "서면 하트광장 일대(무신사 서면점)",
+            "posterImage": "/info/poster/54jpeg.jpeg",
+            "mapUrl": "https://naver.me/5FhPMin7",
+            "region": "경상"
+        },
+        {
             "title": "FAKE PRESIDENT",
             "startDate": "2025-07-04 19:30:00",
             "endDate": "2025-07-04 22:30:00",
@@ -476,6 +485,15 @@
             "posterImage": "/info/poster/48.jpeg",
             "mapUrl": "https://naver.me/Fv7VUsjw",
             "region": "충청"
+        },
+        {
+            "title": "제54회 6.3대선 원천무효 시민 알림 대회",
+            "startDate": "2025-07-06 17:00:00",
+            "endDate": "2025-07-06 17:00:00",
+            "location": "서면 쥬디스태화 하트광장",
+            "posterImage": "/info/poster/55.jpeg",
+            "mapUrl": "https://naver.me/xqf3o68G",
+            "region": "경상"
         },
         {
             "title": "가짜대통령 척결 부정선거 알리기 행진",
