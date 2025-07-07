@@ -518,7 +518,7 @@
             "startDate": "2025-07-08 19:30:00",
             "endDate": "2025-07-08 22:30:00",
             "location": "명동 서울중앙우체국",
-            "posterImage": "/info/poster/59jpg.jpg",
+            "posterImage": "/info/poster/59jpeg.jpeg",
             "mapUrl": "https://naver.me/52RfDLxP",
             "region": "서울"
         },
@@ -527,7 +527,7 @@
             "startDate": "2025-07-10 19:00:00",
             "endDate": "2025-07-10 20:30:00",
             "location": "천안터미널 횡단보도 앞",
-            "posterImage": "/info/poster/57jpg.jpg",
+            "posterImage": "/info/poster/57jpeg.jpeg",
             "mapUrl": "https://naver.me/5yWLVt6F",
             "region": "충청"
         },
