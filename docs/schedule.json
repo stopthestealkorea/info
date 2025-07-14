@@ -612,6 +612,24 @@
             "region": "서울"
         },
         {
+            "title": "2030 & 국민과 함께 행진",
+            "startDate": "2025-07-18 19:00:00",
+            "endDate": "2025-07-18 22:00:00",
+            "location": "서울중앙우체국",
+            "posterImage": "/info/poster/69jpeg.jpeg",
+            "mapUrl": "https://naver.me/52RfDLxP",
+            "region": "서울"
+        },
+        {
+            "title": "이진숙 방통위원장 지지 및 표적수사 항의 집회",
+            "startDate": "2025-07-19 13:00:00",
+            "endDate": "2025-07-19 16:00:00",
+            "location": "대전 유성 경찰서",
+            "posterImage": "/info/poster/68jpeg.jpeg",
+            "mapUrl": "https://naver.me/5NdMhbjK",
+            "region": "충청"
+        },
+        {
             "title": "홍대계몽행진 11th",
             "startDate": "2025-07-19 17:30:00",
             "endDate": "2025-07-19 21:00:00",
@@ -619,6 +637,15 @@
             "posterImage": "/info/poster/44.jpeg",
             "mapUrl": "https://naver.me/GMRpcaLG",
             "region": "서울"
+        },
+        {
+            "title": "We Go Together",
+            "startDate": "2025-07-19 19:00:00",
+            "endDate": "2025-07-19 22:00:00",
+            "location": "대전역 4번출구 앞",
+            "posterImage": "/info/poster/67jpeg.jpeg",
+            "mapUrl": "https://naver.me/F8nnmr9K",
+            "region": "충청"
         },
         {
             "title": "대전역 광장 부정선거 규탄집회",
