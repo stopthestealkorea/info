@@ -639,6 +639,15 @@
             "region": "서울"
         },
         {
+            "title": "FAKE PRESIDENT",
+            "startDate": "2025-07-18 19:30:00",
+            "endDate": "2025-07-18 22:30:00",
+            "location": "종각역 3-1번 출구",
+            "posterImage": "/info/poster/73jpeg.jpeg",
+            "mapUrl": "https://naver.me/GdJhP34k",
+            "region": "서울"
+        },
+        {
             "title": "대구 TKYC 윤석열 대통령 불법구속 규탄행진 17회차",
             "startDate": "2025-07-18 20:00:00",
             "endDate": "2025-07-18 23:00:00",
@@ -681,6 +690,15 @@
             "location": "대전역광장",
             "mapUrl": "https://naver.me/52gmYJ86",
             "region": "충청"
+        },
+        {
+            "title": "제56회 6.3대선 원천무효 시민 알림 대회",
+            "startDate": "2025-07-20 19:00:00",
+            "endDate": "2025-07-20 22:00:00",
+            "location": "서면 쥬디스태화 하트광장",
+            "posterImage": "/info/poster/74jpeg.jpeg",
+            "mapUrl": "https://naver.me/xqf3o68G",
+            "region": "경상"
         },
         {
             "title": "대전역 광장 부정선거 규탄집회",
