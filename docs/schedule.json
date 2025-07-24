@@ -719,6 +719,24 @@
             "region": "충청"
         },
         {
+            "title": "Fake President",
+            "startDate": "2025-07-25 19:00:00",
+            "endDate": "2025-07-25 22:00:00",
+            "location": "명동 서울중앙우체국",
+            "posterImage": "/info/poster/78png.png",
+            "mapUrl": "https://naver.me/52RfDLxP",
+            "region": "서울"
+        },
+        {
+            "title": "홍대 계몽 행진 12th",
+            "startDate": "2025-07-26 17:30:00",
+            "endDate": "2025-07-26 21:00:00",
+            "location": "홍대입구역 7번 출구",
+            "posterImage": "/info/poster/79png.png",
+            "mapUrl": "https://naver.me/GMRpcaLG",
+            "region": "서울"
+        },
+        {
             "title": "대전역 광장 부정선거 규탄집회",
             "startDate": "2025-07-26 19:30:00",
             "endDate": "2025-07-26 22:30:00",
