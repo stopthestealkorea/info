@@ -728,6 +728,33 @@
             "region": "서울"
         },
         {
+            "title": "제70차 안양·의왕 부방대 행진",
+            "startDate": "2025-07-26 10:30:00",
+            "endDate": "2025-07-26 13:00:00",
+            "location": "범계역 4번 출구",
+            "posterImage": "/info/poster/81jpeg.jpeg",
+            "mapUrl": "https://naver.me/58Fhppz3",
+            "region": "경기"
+        },
+        {
+            "title": "평택 주한미군 수호 국민대회",
+            "startDate": "2025-07-26 13:00:00",
+            "endDate": "2025-07-26 16:00:00",
+            "location": "평택 미군기지 안정리 K6 사거리",
+            "posterImage": "/info/poster/82jpeg.jpeg",
+            "mapUrl": "https://naver.me/I5F5awe7",
+            "region": "경기"
+        },
+        {
+            "title": "제16회 YOON AGAIN",
+            "startDate": "2025-07-26 15:00:00",
+            "endDate": "2025-07-26 18:00:00",
+            "location": "서울구치소",
+            "posterImage": "/info/poster/80jpeg.jpeg",
+            "mapUrl": "https://naver.me/546VYYhf",
+            "region": "경기"
+        },
+        {
             "title": "홍대 계몽 행진 12th",
             "startDate": "2025-07-26 17:30:00",
             "endDate": "2025-07-26 21:00:00",
@@ -743,6 +770,23 @@
             "location": "대전역광장",
             "mapUrl": "https://naver.me/52gmYJ86",
             "region": "충청"
+        },
+        {
+            "title": "가짜대통령 척결 / 부정선거 알리기 행진",
+            "startDate": "2025-07-27 17:30:00",
+            "endDate": "2025-07-27 20:00:00",
+            "location": "장기역 5번 출구",
+            "posterImage": "/info/poster/83jpeg.jpeg",
+            "mapUrl": "https://naver.me/5bXmGEQN",
+            "region": "경기"
+        },
+        {
+            "title": "6.3대선 부정선거 규탄집회",
+            "startDate": "2025-07-27 18:00:00",
+            "endDate": "2025-07-27 20:00:00",
+            "location": "수원 광교",
+            "posterImage": "/info/poster/84jpeg.jpeg",
+            "region": "경기"
         },
         {
             "title": "노원.도봉 계몽행진/집회",
