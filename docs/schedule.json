@@ -825,6 +825,15 @@
             "region": "충청"
         },
         {
+            "title": "CHINA LEE",
+            "startDate": "2025-08-01 19:00:00",
+            "endDate": "2025-08-01 22:00:00",
+            "location": "명동 서울중앙우체국",
+            "posterImage": "/info/poster/88jpeg.jpeg",
+            "mapUrl": "https://naver.me/52RfDLxP",
+            "region": "서울"
+        },
+        {
             "title": "노원.도봉 계몽행진/집회",
             "startDate": "2025-08-04 19:30:00",
             "endDate": "2025-08-04 22:00:00",
