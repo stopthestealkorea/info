@@ -852,6 +852,15 @@
             "region": "서울"
         },
         {
+            "title": "용인계몽운동",
+            "startDate": "2025-08-06 19:00:00",
+            "endDate": "2025-08-06 22:00:00",
+            "location": "신분당선 성복역 1번 출구",
+            "posterImage": "/info/poster/91png.png",
+            "mapUrl": "https://naver.me/G87M6iey",
+            "region": "경기"
+        },
+        {
             "title": "제65차 부정선거규탄집회",
             "startDate": "2025-08-07 19:00:00",
             "endDate": "2025-08-07 20:30:00",
