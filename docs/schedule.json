@@ -868,6 +868,15 @@
             "posterImage": "/info/poster/90jpeg.jpeg",
             "mapUrl": "https://naver.me/G5PCmVGY",
             "region": "충청"
+        },
+        {
+            "title": "CHINA LEE 명동 멸공 행진",
+            "startDate": "2025-08-08 19:00:00",
+            "endDate": "2025-08-08 22:00:00",
+            "location": "명동 서울중앙우체국",
+            "posterImage": "/info/poster/92png.png",
+            "mapUrl": "https://naver.me/52RfDLxP",
+            "region": "서울"
         }
     ]
 }
