@@ -879,6 +879,15 @@
             "region": "서울"
         },
         {
+            "title": "BOSS와 함께하는 미사 행진",
+            "startDate": "2025-08-08 19:30:00",
+            "endDate": "2025-08-08 23:00:00",
+            "location": "미사역 10번 출구 시계탑",
+            "posterImage": "/info/poster/96jpeg.jpeg",
+            "mapUrl": "https://naver.me/xNnWVn7p",
+            "region": "경기"
+        },
+        {
             "title": "YOON AGAIN",
             "startDate": "2025-08-08 20:00:00",
             "endDate": "2025-08-08 23:00:00",
@@ -904,6 +913,24 @@
             "posterImage": "/info/poster/95jpeg.jpeg",
             "mapUrl": "https://naver.me/G0fkVlzu",
             "region": "경기"
+        },
+        {
+            "title": "광복 80주년, 건국 77주년 815집회",
+            "startDate": "2025-08-15 13:30:00",
+            "endDate": "2025-08-15 18:00:00",
+            "location": "양재시민의숲 2번출구",
+            "posterImage": "/info/poster/97jpeg.jpeg",
+            "mapUrl": "https://naver.me/GKo0BUkd",
+            "region": "서울"
+        },
+        {
+            "title": "815 자유의 함성 자유와혁신 국민대행진",
+            "startDate": "2025-08-15 14:00:00",
+            "endDate": "2025-08-15 18:00:00",
+            "location": "양재시민의숲 2번출구",
+            "posterImage": "/info/poster/98jpeg.jpeg",
+            "mapUrl": "https://naver.me/GKo0BUkd",
+            "region": "서울"
         }
     ]
 }
