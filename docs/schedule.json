@@ -877,6 +877,33 @@
             "posterImage": "/info/poster/92png.png",
             "mapUrl": "https://naver.me/52RfDLxP",
             "region": "서울"
+        },
+        {
+            "title": "YOON AGAIN",
+            "startDate": "2025-08-08 20:00:00",
+            "endDate": "2025-08-08 23:00:00",
+            "location": "(구) 중앙파출소 삼거리",
+            "posterImage": "/info/poster/94jpeg.jpeg",
+            "mapUrl": "https://naver.me/xNnWVn7p",
+            "region": "경상"
+        },
+        {
+            "title": "제1회 자유광주행진",
+            "startDate": "2025-08-09 18:00:00",
+            "endDate": "2025-08-09 21:00:00",
+            "location": "전남대 후문",
+            "posterImage": "/info/poster/93png.png",
+            "mapUrl": "https://naver.me/5y0VtKAT",
+            "region": "전라"
+        },
+        {
+            "title": "가짜대통령 척결",
+            "startDate": "2025-08-10 17:30:00",
+            "endDate": "2025-08-10 21:00:00",
+            "location": "화정역 4번 출구",
+            "posterImage": "/info/poster/95jpeg.jpeg",
+            "mapUrl": "https://naver.me/G0fkVlzu",
+            "region": "경기"
         }
     ]
 }
