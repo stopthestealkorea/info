@@ -924,11 +924,20 @@
             "region": "경기"
         },
         {
-            "title": "광복 80주년, 건국 77주년 815집회",
+            "title": "노원.도봉 계몽행진/집회",
+            "startDate": "2025-08-11 19:30:00",
+            "endDate": "2025-08-11 23:00:00",
+            "location": "도봉산역 2번 출구 앞 창포원",
+            "posterImage": "/info/poster/101jpeg.jpeg",
+            "mapUrl": "https://naver.me/xEMhtxvw",
+            "region": "서울"
+        },
+        {
+            "title": "815 자유대행진",
             "startDate": "2025-08-15 13:30:00",
             "endDate": "2025-08-15 18:00:00",
             "location": "양재시민의숲 2번출구",
-            "posterImage": "/info/poster/97jpeg.jpeg",
+            "posterImage": "/info/poster/100jpeg.jpeg",
             "mapUrl": "https://naver.me/GKo0BUkd",
             "region": "서울"
         },
