@@ -933,6 +933,15 @@
             "region": "서울"
         },
         {
+            "title": "용인계몽운동",
+            "startDate": "2025-08-13 18:00:00",
+            "endDate": "2025-08-13 22:00:00",
+            "location": "이마트용인점 맞은편 광장",
+            "posterImage": "/info/poster/101png.png",
+            "mapUrl": "https://naver.me/5zXoL6ky",
+            "region": "경기"
+        },
+        {
             "title": "815 자유대행진",
             "startDate": "2025-08-15 13:30:00",
             "endDate": "2025-08-15 18:00:00",
