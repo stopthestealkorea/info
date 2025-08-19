@@ -969,6 +969,24 @@
             "region": "서울"
         },
         {
+            "title": "용인계몽운동",
+            "startDate": "2025-08-20 18:00:00",
+            "endDate": "2025-08-20 22:00:00",
+            "location": "이마트용인점 맞은편 광장>용인중앙시장역",
+            "posterImage": "/info/poster/104jpeg.jpeg",
+            "mapUrl": "https://naver.me/5zXoL6ky",
+            "region": "경기"
+        },
+        {
+            "title": "명동멸공행진",
+            "startDate": "2025-08-22 19:00:00",
+            "endDate": "2025-08-22 22:00:00",
+            "location": "명동 서울중앙우체국>서울역",
+            "posterImage": "/info/poster/105png.png",
+            "mapUrl": "https://naver.me/5y0VtKAT",
+            "region": "서울"
+        },
+        {
             "title": "자유와 혁신 Episode 1: 함성",
             "startDate": "2025-08-23 14:00:00",
             "endDate": "2025-08-23 18:00:00",
