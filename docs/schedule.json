@@ -994,6 +994,15 @@
             "posterImage": "/info/poster/103jpeg.jpeg",
             "mapUrl": "https://naver.me/5ucAxzVK",
             "region": "서울"
+        },
+        {
+            "title": "강릉 부정선거 규탄 시민 집회",
+            "startDate": "2025-08-26 18:00:00",
+            "endDate": "2025-08-26 22:00:00",
+            "location": "강릉역 광장",
+            "posterImage": "/info/poster/106jpeg.jpeg",
+            "mapUrl": "https://naver.me/xUSe9hGP",
+            "region": "강원"
         }
     ]
 }
