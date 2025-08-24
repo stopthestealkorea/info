@@ -996,6 +996,15 @@
             "region": "서울"
         },
         {
+            "title": "성남 계몽 운동",
+            "startDate": "2025-08-25 19:00:00",
+            "endDate": "2025-08-25 22:00:00",
+            "location": "경기창조경제혁신센터(삼평동629)",
+            "posterImage": "/info/poster/107pn.png",
+            "mapUrl": “https://naver.me/x1egXCk6",
+            "region": "경기"
+        },
+        {
             "title": "강릉 부정선거 규탄 시민 집회",
             "startDate": "2025-08-26 18:00:00",
             "endDate": "2025-08-26 22:00:00",
